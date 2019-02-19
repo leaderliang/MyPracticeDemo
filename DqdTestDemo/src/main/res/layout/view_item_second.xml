@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.leaderliang.myapplication.ViewCombatItem
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/ll_second_item">
+
+    <!--<RelativeLayout android:id="@+id/rl_view_item"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--&lt;!&ndash;<com.leaderliang.myapplication.ViewCountryItem&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;/>&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout android:layout_width="match_parent" android:layout_centerInParent="true"-->
+    <!--android:layout_height="wrap_content" android:layout_below="@+id/a_1" android:gravity="center"-->
+    <!--android:background="@android:color/holo_green_light" android:id="@+id/ll_line" >-->
+    <!--<TextView android:id="@+id/tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2：5"/>-->
+    <!--</LinearLayout>-->
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+
+              android:weightSum="4">
+
+    <com.leaderliang.myapplication.ViewCombatLine
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    <com.leaderliang.myapplication.ViewCombatLine
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"/>
+
+    <com.leaderliang.myapplication.ViewCombatLine
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"/>
+
+    <com.leaderliang.myapplication.ViewCombatLine
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>
+
+
+    <com.leaderliang.myapplication.ViewLine
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    >
+
+    </com.leaderliang.myapplication.ViewLine>
+
+</com.leaderliang.myapplication.ViewCombatItem>

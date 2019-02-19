@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="com.leaderliang.myvideocompress.MainActivity">
+
+    <EditText
+            android:id="@+id/input_video_path"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="请输入要压缩视频路径"
+            android:gravity="top"/>
+
+    <EditText
+            android:id="@+id/input_compress_order"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="请输入压缩视频命令"
+            android:gravity="top"/>
+
+    <Button
+            android:onClick="runCompressOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="运行压缩命令"/>
+
+    <Button
+            android:onClick="stopCompressOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="停止压缩命令"/>
+
+    <Button
+            android:onClick="getCompressOrderState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是否在压缩"/>
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/tv_show_compress_log"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        />
+    </ScrollView>
+
+</LinearLayout>

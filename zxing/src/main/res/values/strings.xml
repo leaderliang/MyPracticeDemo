@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">zxing</string>
+    <string name="scan">扫一扫</string>
+</resources>

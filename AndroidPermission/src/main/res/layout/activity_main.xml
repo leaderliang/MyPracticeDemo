@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.liangyanqiao.myapplication.MainActivity"
+>
+
+    <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="危险权限" android:layout_marginTop="5dp"/>
+
+
+        <Button
+                android:text="WRITE_CONTACTS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="WRITE_CONTACTS"/>
+
+        <Button
+                android:text="CALL_PHONE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="CALL_PHONE"/>
+
+        <Button
+                android:text="READ_CALENDAR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="READ_CALENDAR"/>
+
+        <Button
+                android:text="CAMERA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="CAMERA"/>
+
+        <Button
+                android:text="BODY_SENSORS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="BODY_SENSORS"/>
+
+        <Button
+                android:text="ACCESS_FINE_LOCATION"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="ACCESS_FINE_LOCATION"/>
+
+        <Button
+                android:text="READ_EXTERNAL_STORAGE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="READ_EXTERNAL_STORAGE"/>
+
+        <Button
+                android:text="RECORD_AUDIO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="RECORD_AUDIO"/>
+        <Button
+                android:text="READ_SMS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="READ_SMS"/>
+
+        <Button
+                android:text="WRITE_EXTERNAL_STORAGE and ACCESS_FINE_LOCATION"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="WRITE_EXTERNAL_STORAGE_AND_ACCESS_FINE_LOCATION"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="特殊权限" android:layout_marginTop="5dp"/>
+
+        <Button
+                android:text="SYSTEM_ALERT_WINDOW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="SYSTEM_ALERT_WINDOW"/>
+
+        <Button
+                android:text="WRITE_SETTINGS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="WRITE_SETTINGS"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="危险权限可以通过 adb 命令在代码行中查看，以上从每个危险权限分组中抽出单个权限进行授权，如果同一组的任何一个权限被授权了，其他权限也自动被授权，在 android 原生系统权限测试通过，特殊权限因 android 机型众多，如需要适配的话，需要针对性的处理"
+                  android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</ScrollView>

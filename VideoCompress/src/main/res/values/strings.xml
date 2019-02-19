@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My VideoCompress</string>
+    <string name="compress_result_input_output">输入:%1$s,大小:%2$s,输出:%3$s,大小:%4$s</string>
+
+    <string name="compress_failed">压缩失败</string>
+    <string name="compress_progress">进度: %1$s</string>
+    <string name="compress_load_library_succeed">加载库成功</string>
+    <string name="compress_load_library_failed">加载库失败,原因:%1$s</string>
+</resources>

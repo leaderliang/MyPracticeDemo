@@ -1,2 +1,0 @@
-# MyPracticeDemo
-Practice Demo
