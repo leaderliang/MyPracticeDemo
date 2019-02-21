@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.PathMeasure;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -16,6 +17,8 @@ public class PathViewPractice extends View {
     // or use setAntiAlias(true/false)
     //mPaint.setAntiAlias(true);
     Path mPath = new Path();
+
+    PathMeasure mPathMeasure;
 
 
     public PathViewPractice(Context context, @Nullable AttributeSet attrs) {
@@ -40,7 +43,8 @@ public class PathViewPractice extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        // Path.FillType.WINDING  从区域里向外画线，与线相交的交点，判断线是从左还是右穿过的，方向。
+        // Path.FillType.WINDING 需要考虑图形的方向。 
+        // 从区域里向外画线，与线相交的交点，判断线是从左还是右穿过的，方向。
         // 多个交点都是同一个方向的话就相加，否则 就要抵消。如 左右 相交的点数就还是 0；
         // 总数不是 0 的话，就可以判断是在 内部。
         // 如果是  0 的话，就判断是在 外部。
@@ -54,7 +58,14 @@ public class PathViewPractice extends View {
 //        Path.FillType.INVERSE_WINDING
         // 上面两个 加了 INVERSE 前缀的，意思 也就是和不加前缀 相反的效果了。
 
-
         canvas.drawPath(mPath, mPaint);
+
+//        mPathMeasure = new PathMeasure();
+        // getLength 可以获取 path 的路径长度，比如圆的话，就是获取圆的周长；
+//        mPathMeasure.getLength();
+//        mPathMeasure.getPosTan();
+
+
+
     }
 }
