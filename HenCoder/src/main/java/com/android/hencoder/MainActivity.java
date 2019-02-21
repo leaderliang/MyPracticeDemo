@@ -44,18 +44,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        OkHttpClient client = new OkHttpClient();
-        client.newCall(new Request.Builder().url("").build()).enqueue(new okhttp3.Callback() {
-            @Override
-            public void onFailure(okhttp3.Call call, IOException e) {
 
-            }
-
-            @Override
-            public void onResponse(okhttp3.Call call, okhttp3.Response response) throws IOException {
-
-            }
-        });
+//        OkHttpClient client = new OkHttpClient();
+//        client.newCall(new Request.Builder().url("").build()).enqueue(new okhttp3.Callback() {
+//            @Override
+//            public void onFailure(okhttp3.Call call, IOException e) {
+//
+//            }
+//
+//            @Override
+//            public void onResponse(okhttp3.Call call, okhttp3.Response response) throws IOException {
+//
+//            }
+//        });
 
  
     }
