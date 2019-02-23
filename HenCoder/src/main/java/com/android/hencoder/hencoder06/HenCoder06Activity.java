@@ -14,7 +14,6 @@ public class HenCoder06Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hencoder_06);
 
-
     }
 
 
