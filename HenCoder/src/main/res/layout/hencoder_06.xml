@@ -15,9 +15,12 @@
     <!--android:layout_width="wrap_content"-->
     <!--android:layout_height="wrap_content"/>-->
 
-    <com.android.hencoder.hencoder06.PieChart
+    <!--<com.android.hencoder.hencoder06.PieChart-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <com.android.hencoder.hencoder06.AvatarView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
 
 </LinearLayout>

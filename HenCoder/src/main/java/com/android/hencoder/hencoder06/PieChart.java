@@ -14,7 +14,7 @@ import android.view.View;
  */
 public class PieChart extends View {
 
-    private static final float RADIUS = Utils.dp2px(150);
+    private static final float RADIUS = Utils.dp2px(150f);
     private final float[] ANGLE = {60f, 80f, 120f, 100f};
     private final String[] COLORS = {"#DC143C", "#2E8B57", "#0000FF", "#FFD700"};
     private final float LENGTH = Utils.dp2px(20f);
