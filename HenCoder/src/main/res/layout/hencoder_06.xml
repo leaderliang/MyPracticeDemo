@@ -11,11 +11,13 @@
     <!--android:layout_height="wrap_content"/>-->
 
 
-    <com.android.hencoder.hencoder06.DashBoard
+    <!--<com.android.hencoder.hencoder06.DashBoard-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <com.android.hencoder.hencoder06.PieChart
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
-
 
 
 </LinearLayout>

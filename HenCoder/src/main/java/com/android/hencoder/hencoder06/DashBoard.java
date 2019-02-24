@@ -70,6 +70,7 @@ public class DashBoard extends View {
 
         mPaint.setStyle(Paint.Style.STROKE);
         // 画指针
+        // toRadians(double angdeg) 转换为度，以弧度为单位的近似等效角的角度。从角度到弧度的转换通常是不精确的
         canvas.drawLine(getWidth() / 2, getHeight() / 2,
                 (float) Math.cos(Math.toRadians(getAngleFromMark(1))) * LENGTH + getWidth() / 2,
                 (float) Math.sin(Math.toRadians(getAngleFromMark(1))) * LENGTH + getHeight() / 2,
