@@ -22,6 +22,10 @@ public class AvatarView extends View {
 
 
     Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    /**
+     * PorterDuffXfermode就是图形混合模式的意思
+     * https://www.cnblogs.com/tianzhijiexian/p/4297172.html
+     */
     PorterDuffXfermode mPorterDuffXfermode = new PorterDuffXfermode(PorterDuff.Mode.SRC_IN);
 
 
