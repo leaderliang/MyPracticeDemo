@@ -22,6 +22,7 @@ public class Test extends Male {
         /* 以下是不允许的 抽象类不能被实例化*/
 //        Male male = new Male("name");
 
+
     }
 
 
