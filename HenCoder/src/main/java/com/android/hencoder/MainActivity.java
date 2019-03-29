@@ -1,22 +1,17 @@
 package com.android.hencoder;
 
 import android.os.Bundle;
-import android.provider.Settings;
-import android.provider.SettingsSlicesContract;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.Toast;
+import com.android.hencoder.dynamic_proxy.GithubService;
+import com.android.hencoder.dynamic_proxy.Repo;
 import com.google.gson.Gson;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 .baseUrl("https://api.github.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
 
         GithubService mGithubService = retrofit.create(GithubService.class);
         Call<List<Repo>> repos = mGithubService.getUserRepos();
