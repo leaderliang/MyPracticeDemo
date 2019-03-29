@@ -10,12 +10,12 @@ import java.lang.reflect.Method;
  * @version 1.0
  * @since 2019/03/27 23:59
  */
-public class DynamicProxySubject implements InvocationHandler {
+public class DynamicProxyHandler implements InvocationHandler {
 
 
     private final Object mObject;
 
-    public DynamicProxySubject(Object object) {
+    public DynamicProxyHandler(Object object) {
         mObject = object;
     }
 
