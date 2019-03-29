@@ -1,4 +1,4 @@
-package com.java.designmodel.StrategyPattern;
+package com.java.designmodel.strategy;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
