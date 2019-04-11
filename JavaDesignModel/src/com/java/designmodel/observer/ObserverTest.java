@@ -81,6 +81,7 @@ public class ObserverTest {
 //        System.out.println("\nEx3: " + solution(955));
 
 
+
         int[][] i = {{1, 3, -3}, {1, 3, -3}};
 
         System.out.println("\nEx1: " + getMax(i));
