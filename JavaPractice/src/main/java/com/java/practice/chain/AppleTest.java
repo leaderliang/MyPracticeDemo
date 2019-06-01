@@ -1,4 +1,4 @@
-package com.java.test.chain;
+package com.java.practice.chain;
 
 /**
  * TODO

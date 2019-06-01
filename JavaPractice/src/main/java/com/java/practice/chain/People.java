@@ -1,4 +1,4 @@
-package com.java.test.chain;
+package com.java.practice.chain;
 
 /**
  * TODO
@@ -65,7 +65,7 @@ public class People {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "People{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
@@ -73,12 +73,12 @@ public class People {
 
 
     public static void main(String[] args) {
-        Builder builder = new People.Builder();
+        Builder builder = new Builder();
         builder.setUserName("lss0555")
                 .setPassword("12345")
                 .build();
         //或者
-        People user = new People.Builder().setUserName("lss0555").setPassword("123123").build();
+        People user = new Builder().setUserName("lss0555").setPassword("123123").build();
         //或者
         People user1 = People.builder().setUserName("lss0555").setPassword("654321").build();
 

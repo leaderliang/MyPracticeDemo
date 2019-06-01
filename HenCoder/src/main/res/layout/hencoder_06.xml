@@ -6,9 +6,9 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <!--<com.android.hencoder.hencoder06.PathViewPractice-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"/>-->
+    <com.android.hencoder.hencoder06.PathViewPractice
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
 
 
     <!--<com.android.hencoder.hencoder06.DashBoard-->
@@ -23,8 +23,8 @@
             <!--android:layout_width="wrap_content"-->
             <!--android:layout_height="wrap_content"/>-->
 
-    <com.android.hencoder.hencoder06.SportsView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+    <!--<com.android.hencoder.hencoder06.SportsView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
 
 </LinearLayout>

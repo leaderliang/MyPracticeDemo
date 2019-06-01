@@ -1,4 +1,4 @@
-package com.java.test.chain;
+package com.java.practice.chain;
 
 /**
  * TODO Builder模式，链式调用Demo
@@ -85,7 +85,7 @@ public class User {
     }
 
     public static void main(String[] args) {
-        User june = new User.UserBuilder("dan", "liang").age(18).address("tty").build();
+        User june = new UserBuilder("dan", "liang").age(18).address("tty").build();
         System.out.println(june.getAddress());
     }
 }

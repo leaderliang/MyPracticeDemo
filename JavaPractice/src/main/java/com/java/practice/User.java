@@ -1,4 +1,4 @@
-package com.java.test;
+package com.java.practice;
 
 /**
  * TODO
