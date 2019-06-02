@@ -16,9 +16,39 @@ class Test {
         System.out.print("原数组元素:");
         printArr(arr);
         System.out.print("排序后数组元素:");
-        bubbleSort(arr);
+//        bubbleSort(arr);
+        selectionSort(arr);
         printArr(arr);
     }
+
+    /**
+     * 选择排序 从小到大排序
+     * @param arr
+     */
+    private static void selectionSort(int[] arr) {
+        if (arr.length <= 0) {
+            return;
+        }
+        int arrLength = arr.length ;
+        for (int i = 0; i < arrLength - 1; i++) {
+            int minValues = i;
+            for (int j = i + 1; j < arrLength; j++) {
+                if(arr[minValues] > arr[j]){
+                    //比较 minValues 和 j 对应的值大小，把小的值付给 minValues
+                    minValues = j;
+                }
+            }
+            if(minValues != i){
+                int temp = arr[minValues];
+                arr[minValues] = arr[i];
+                arr[i] = temp;
+            }
+        }
+
+
+
+    }
+
 
     private static void bubbleSort(int[] arr) {
         if (arr.length <= 0) {
