@@ -1,6 +1,5 @@
 package com.java.practice;
 
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 
 public class Test extends Male {
 
