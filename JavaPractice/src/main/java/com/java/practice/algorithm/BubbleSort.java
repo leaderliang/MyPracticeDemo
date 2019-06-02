@@ -10,7 +10,7 @@ package com.java.practice.algorithm;
 public class BubbleSort {
 
     /**
-     * 冒泡排序
+     * 冒泡排序 从小到大排序
      * int[] arr = {6, 5, 3, 1, 8, 7, 2, 4};
      * @param arr
      */
@@ -39,12 +39,42 @@ public class BubbleSort {
     }
 
     /**
-     * 交换数组元素
-     *
+     * 从大到小
      * @param arr
-     * @param i
-     * @param j
      */
+    private static void bubbleSort2(int[] arr) {
+        if (arr.length <= 0) {
+            return;
+        }
+        int arrLength = arr.length - 1;
+        boolean isNeedExchange;
+        for (int i = 0; i < arrLength; i++) {
+            isNeedExchange = false;
+            System.out.println("\n\n" + "length " + (arrLength - i));
+            for (int j = 0; j < arrLength - i; j++) {
+                System.out.println("j=" + j + "   arr[j]=" + arr[j] + "   arr[j + 1]=" + arr[j + 1]);
+                if (arr[j] < arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                    isNeedExchange = true;
+                }
+            }
+            if (!isNeedExchange) {
+                return;
+            }
+
+        }
+
+    }
+
+        /**
+         * 交换数组元素
+         *
+         * @param arr
+         * @param i
+         * @param j
+         */
     public static void swapArr(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
