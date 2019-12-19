@@ -20,6 +20,7 @@ public class ListNode {
     /**
      * 链表节点的构造函数
      * 使用arr为参数，创建一个链表，当前的ListNode为链表头结点
+     *
      * @param arr
      */
     public ListNode(int[] arr) {
@@ -34,11 +35,16 @@ public class ListNode {
         }
     }
 
+    /**
+     * 以当前节点为头结点的链表信息字符串
+     *
+     * @return
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         ListNode cur = this;
-        while (cur != null){
+        while (cur != null) {
             sb.append(cur.val + "->");
             cur = cur.next;
         }

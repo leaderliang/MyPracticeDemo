@@ -1,7 +1,5 @@
 package com.java.designmodel;
 
-import java.util.concurrent.*;
-
 /**
  * @author liangyanqiao
  */

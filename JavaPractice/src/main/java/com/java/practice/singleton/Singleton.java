@@ -3,6 +3,11 @@ package com.java.practice.singleton;
 /**
  * TODO 单例模式-双重校验锁
  *
+ * synchronized 修饰不同位置的作用
+ * synchronized 修饰普通方法，锁的是当前实例对象
+ * synchronized 修饰静态方法，锁的是当前类的class实例
+ * synchronized 修饰方法块儿，锁的是 synchronized 括号里配置的对象
+ *
  * @author dev.liang <a href="mailto:dev.liang@outlook.com">Contact me.</a>
  * @version 1.0
  * @since 2019/06/12 17:12
