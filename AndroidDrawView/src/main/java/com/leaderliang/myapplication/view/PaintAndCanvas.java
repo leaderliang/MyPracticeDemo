@@ -1,10 +1,14 @@
 package com.leaderliang.myapplication.view;
 
 import android.content.Context;
-import android.graphics.*;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Path;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.ViewConfiguration;
 
 /**
  * Paint And Canvas 简单实用
@@ -41,8 +45,58 @@ public class PaintAndCanvas extends View {
     }
 
     @Override
+    public void onWindowFocusChanged(boolean hasWindowFocus) {
+        super.onWindowFocusChanged(hasWindowFocus);
+        int top = getTop();
+        int right = getRight();
+        int bottom = getBottom();
+        int left = getLeft();
+
+        float getx = getX();
+        float getTranslationX = getTranslationX();
+        float gety = getY();
+        float getTranslationy = getTranslationY();
+
+        System.out.println("top "+top + " right "+right + " bottom "+ bottom + " left "+left+" getx "+getx + " gety "+gety + " getTranslationX "+getTranslationX + " getTranslationy "+ getTranslationy);
+        ViewConfiguration.get(getContext()).getScaledTouchSlop();
+    }
+
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+    }
+
+    /**
+     * 可以在这个方法里处理一些 需要停止的动画 和 线程、或者 view 变的不可见
+     * 当 当前 view 被 remove 或者 包含此 view 的 activity 退出
+     * 时会调用此方法，不处理可能会造成内存泄漏
+     *
+     */
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+    }
+
+
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+    }
+
+    @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+
+        final int paddingLeft = getPaddingLeft();
+        final int paddingRight = getPaddingRight();
+        final int paddingTop = getPaddingTop();
+        final int paddingBottom = getPaddingBottom();
+
+        int width = getWidth() - paddingLeft - paddingRight;
+        int height = getHeight() - paddingTop - paddingBottom;
+        int radius = Math.min(width, height) / 2;
+        canvas.drawCircle(paddingLeft + width / 2, paddingTop + height / 2, radius, mPaint);
 
 //        canvas.drawCircle(300, 300, 100, mPaint);
 

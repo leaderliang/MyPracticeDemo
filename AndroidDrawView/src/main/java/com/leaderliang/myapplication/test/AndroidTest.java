@@ -13,7 +13,8 @@ import java.util.Map;
 public class AndroidTest {
 
     public static void main(String[] args) {
-        testLinkedHashMap();
+         int i = (1 << 30 ) - 1;
+        System.out.println(i);
 
          
     }

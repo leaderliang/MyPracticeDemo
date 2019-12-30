@@ -26,9 +26,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
 //        setContentView(R.layout.view_paint_and_canvas);
-        setContentView(R.layout.view_scroll_nesting);
+//        setContentView(R.layout.view_scroll_nesting);
+        setContentView(R.layout.view_circle);
 
         Log.d("MainActivity", "onCreate");
+
 
         /*recycleView = findViewById(R.id.recycler_view);
         recycleView.setHasFixedSize(true);//设置固定大小

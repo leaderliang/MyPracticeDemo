@@ -62,7 +62,14 @@ public class Person {
 //        Person p = new Person();
 //        p.doSomeThing();
 
-        takeSurplus();
+//        takeSurplus();
+
+
+//        Outer outer = new Outer();
+//        outer.test();
+
+
+
     }
 
 
