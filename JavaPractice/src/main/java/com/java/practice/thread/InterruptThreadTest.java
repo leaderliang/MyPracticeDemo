@@ -1,7 +1,7 @@
 package com.java.practice.thread;
 
 /**
- * TODO
+ * TODO  中断线程
  *
  * @author dev.liang <a href="mailto:dev.liang@outlook.com">Contact me.</a>
  * @version 1.0
@@ -42,10 +42,10 @@ public class InterruptThreadTest {
 
 
     /**
-     * step 3
+     * step 3  实现 interrupt 中断效果
      * @param args
      */
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         Thread thread = new InterruptThread();
         thread.start();
 
@@ -56,5 +56,28 @@ public class InterruptThreadTest {
             System.out.println( "InterruptThreadTest Exception " );
         }
         thread.interrupt();
+    }*/
+
+
+
+    /**
+     * step 4  使用 boolean 标志位
+     * @param args
+     */
+    public static void main(String[] args) {
+        InterruptThread thread = new InterruptThread();
+        thread.start();
+
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // ... 一些逻辑
+        thread.isStopped = true;
+
+        // ... 一些逻辑
     }
+
+
 }
