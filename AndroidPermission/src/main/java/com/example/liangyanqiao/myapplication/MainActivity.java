@@ -27,17 +27,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final int REQUEST_CODE_WRITE_SETTINGS = 2;
 
-    HandlerThread mHandlerThread;
-
-
-    final Handler handler = new Handler(mHandlerThread.getLooper()){
-        @Override
-        public void handleMessage(Message msg) {
-            System.out.println("收到消息");
-
-        }
-    };
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

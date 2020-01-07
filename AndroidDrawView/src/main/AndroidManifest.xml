@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.leaderliang.myapplication">
 
+    <!--android:sharedUserId="com.android.devliang" 跨 app 打开 activity 使用，需要两个对应 app 都设置相同的 uid-->
+
+    <!--跨 app 打开 activity 的安全权限配置  -->
+    <!--<uses-permission android:name="com.devliang.test"/>-->
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -9,20 +14,20 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" android:configChanges="orientation">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>-->
-        </activity>
-        <activity android:name=".SecondActivity" android:screenOrientation="portrait" />
-
-        <activity android:name=".ViewTouchEventActivity" android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity" android:screenOrientation="portrait" />
+
+        <activity android:name=".ViewTouchEventActivity" android:screenOrientation="portrait" >
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>-->
         </activity>
 
     </application>

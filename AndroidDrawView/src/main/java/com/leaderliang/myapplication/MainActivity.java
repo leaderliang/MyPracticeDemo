@@ -1,5 +1,6 @@
 package com.leaderliang.myapplication;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import com.leaderliang.myapplication.scrollnesting.RecycleViewAdapter;
 
@@ -24,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 //        setContentView(R.layout.view_paint_and_canvas);
 //        setContentView(R.layout.view_scroll_nesting);
-        setContentView(R.layout.view_circle);
+//        setContentView(R.layout.view_circle);
 
         Log.d("MainActivity", "onCreate");
 
@@ -44,6 +46,18 @@ public class MainActivity extends AppCompatActivity {
         }
         adapter = new RecycleViewAdapter(this, R.layout.recycleview_bringinto, data);
         recycleView.setAdapter(adapter);*/
+
+
+        Button mBtOpenOtherApp = findViewById(R.id.bt_open_app_activity);
+        mBtOpenOtherApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setComponent(new ComponentName("com.example.liangyanqiao.myapplication", "com.example.liangyanqiao.myapplication.MainActivity"));
+//                intent.setAction("android.intent.test");
+                startActivity(intent);
+            }
+        });
 
 
     }

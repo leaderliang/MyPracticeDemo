@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.liangyanqiao.myapplication">
+          package="com.example.liangyanqiao.myapplication"
+         >
+    <!--第一种方式的  sharedUserId 在这个跨 app 跳转有何意义？？
+        需要对应的 activity 标签里不设置 intent-filter 才起作用，设置了 intent-filter ，会默认的打开 android:exported="true"-->
+    <!--    android:sharedUserId="com.android.devliang"-->
 
 
     <!--特殊权限-->
@@ -19,6 +23,8 @@
     <uses-permission android:name="android.permission.READ_SMS"/>
 
 
+    <!--跨 app 打开 activity 的安全权限配置-->
+    <!--<permission android:name="com.devliang.test"/>-->
 
     <application
             android:allowBackup="true"
@@ -26,11 +32,17 @@
             android:label="@string/app_name"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+<!--        android:exported="true"-->
+        <!--android:permission="com.devliang.test"-->
+
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
+                <!--<action android:name="android.intent.action.VIEW"/>-->
+                <!--<action android:name="android.intent.test"/>
+                <category android:name="android.intent.category.DEFAULT"/>-->
             </intent-filter>
         </activity>
     </application>

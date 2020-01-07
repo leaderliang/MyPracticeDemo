@@ -13,10 +13,10 @@ import java.util.Map;
 public class AndroidTest {
 
     public static void main(String[] args) {
-         int i = (1 << 30 ) - 1;
-        System.out.println(i);
+//        int i = (1 << 30) - 1;
+//        System.out.println(i);
 
-         
+
     }
 
     /**
@@ -54,19 +54,16 @@ public class AndroidTest {
         map.remove(toEvict.getKey());
 
 
-
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue());
 
         }
 
-//        System.out.println();
-//
-//        map.remove(0);
-//
-//        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-//            System.out.println(entry.getKey() + ":" + entry.getValue());
-//        }
+        /*System.out.println();
+        map.remove(0);
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ":" + entry.getValue());
+        }*/
 
     }
 

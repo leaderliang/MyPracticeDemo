@@ -1,7 +1,5 @@
 package com.java.practice.reflect;
 
-import java.lang.reflect.Field;
-
 /**
  * TODO
  *
@@ -12,7 +10,7 @@ import java.lang.reflect.Field;
 public class ReflectTest {
 
     public static void main(String[] args) {
-        Person p = new Person();
+        /*Person p = new Person();
         Class<?> c1 = p.getClass();
         Field[] f = c1.getFields();
         Field[] f1 = c1.getDeclaredFields();
@@ -24,6 +22,22 @@ public class ReflectTest {
             Class c3 = Class.forName("com.java.practice.reflect.Person");
             c3.getDeclaredFields();
             c3.getFields();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }*/
+
+
+        try {
+            Class c  = Person.class.getClassLoader().loadClass("com.java.practice.reflect.Person");
+            Person person = (Person) c.newInstance();
+            person.setUserName("liang");
+
+            String userName = person.getUserName();
+            System.out.println(userName);
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
