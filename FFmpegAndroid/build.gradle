@@ -32,7 +32,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     androidTestImplementation 'com.squareup.assertj:assertj-android:1.0.0'
 }
 

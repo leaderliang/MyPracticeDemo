@@ -1,4 +1,4 @@
-package com.java.practice;
+package com.java.practice.data_structure;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -31,8 +31,8 @@ public class JavaTest {
 
 
         int i = 1, a = 0;
-        // 先赋值 a = i，后运算 i = i+1
-//        System.out.println("a=i++ --> " + (a=i++) + " a=i -->" + (a=i));
+        // i++,++在后 先赋值 a = i，后运算 i = i+1
+        System.out.println("a=i++ --> " + (a=i++) + " a=i -->" + (a=i));
         // 打印： a=i++ --> 1； a=i --> 2
 
         // 先运算 i = i + 1，后赋值 a = i
@@ -50,7 +50,25 @@ public class JavaTest {
 //        ExecutorService executorService = Executors.newSingleThreadExecutor();
 
 
+        /*int a = 4;
+        if(a > 0){
+            testMethod();
+            *//*System.out.println( "a>0");
+            return;*//*
+        }else if(a > 3){
+            System.out.println("a > 3");
+        }else if(a == 4){
+            System.out.println("a==4");
+        }else{
+            System.out.println("else");
+        }
+        System.out.println("cccccc");*/
 
+    }
+
+    private static void testMethod() {
+        System.out.println( "a>0");
+        return;
     }
 
 
@@ -69,5 +87,7 @@ public class JavaTest {
         i = i++;
         i = i++;
         System.out.println("i=" + i);
+//        Collections.synchronizedList();
     }
+
 }

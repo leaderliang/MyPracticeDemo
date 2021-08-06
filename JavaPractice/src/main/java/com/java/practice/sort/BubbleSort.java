@@ -1,4 +1,4 @@
-package com.java.practice;
+package com.java.practice.sort;
 
 /**
  * TODO
@@ -59,5 +59,13 @@ public class BubbleSort {
         bubbleSort(arr); //冒泡排序
         printArr(arr); //打印数组
     }
+
+
+//    Object 类的方法,垃圾回收之前会调用此方法,子类可以重写finalize()方法实现对资源的回收；
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
 
 }
