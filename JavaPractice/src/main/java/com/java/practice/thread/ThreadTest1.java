@@ -6,9 +6,7 @@ package com.java.practice.thread;
  * yield 和 sleep 的异同
  *
  * 1）yield, sleep 都能暂停当前线程，sleep 可以指定具体休眠的时间，而 yield 则依赖 CPU 的时间片划分。
- *
  * 2）yield, sleep 两个在暂停过程中，如已经持有锁，则都不会释放锁资源。
- *
  * 3）yield 不能被中断，而 sleep 则可以接受中断。
  *
  * 总结：
@@ -17,7 +15,7 @@ package com.java.practice.thread;
  * 也能给其他线程一些运行的机会，避免一个线程长时间占有 CPU 资源。
  *
  * @author dev.liang <a href="mailto:dev.liang@outlook.com">Contact me.</a>
- * @version 1.0
+ * @version 1.0IntentService
  * @since 2020/06/22 11:19
  */
 public class ThreadTest1 {

@@ -1,5 +1,7 @@
 package com.leaderliang.myapplication.test;
 
+import android.util.ArrayMap;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -17,6 +19,10 @@ public class AndroidTest {
 //        System.out.println(i);
 
 
+        ArrayMap<Integer,String> arrayMap = new ArrayMap();
+        arrayMap.put(1, "");
+
+        testLinkedHashMap();
     }
 
     /**

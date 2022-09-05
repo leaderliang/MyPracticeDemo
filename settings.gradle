@@ -1,1 +1,4 @@
-include ':app', ':SinaLogin', ':BottomSheet', ':AndroidPermission', ':zxing', ':Material Design', ':VideoCompress', ':FFmpegAndroid', ':AndroidDrawView', ':TouchEventTest', ':DqdTestDemo', ':statusbarbg', ':AidlDemo', ':KotlinDemo', ':hencoder', ':hencoder', ':JavaPractice', ':JavaDesignModel'
+include ':app', ':SinaLogin', ':BottomSheet', ':AndroidPermission', ':zxing',
+         ':VideoCompress', ':FFmpegAndroid', ':AndroidDrawView',
+        ':TouchEventTest', ':DqdTestDemo', ':statusbarbg', ':AidlDemo', ':KotlinDemo',
+        ':hencoder', ':hencoder', ':JavaPractice', ':JavaDesignModel',':MaterialDesign'

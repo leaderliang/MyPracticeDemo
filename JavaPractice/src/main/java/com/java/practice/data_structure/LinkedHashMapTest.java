@@ -10,6 +10,12 @@ import java.util.Map;
  *
  * 调用 put 插入新的对象也是存储在链表尾端，这样当内存 缓存达到设定的最大值时，将链表头部的对象（近期最少用到的）移除
  *
+ *
+ * jdk1.8 所以打印出来是尾插法，你们可以用下 jdk1.7 就是头插法了！！！
+ * jdk1.8 所以打印出来是尾插法，你们可以用下 jdk1.7 就是头插法了！！！
+ * jdk1.8 所以打印出来是尾插法，你们可以用下 jdk1.7 就是头插法了！！！
+ *
+ * 最近访问的最后输出，那么这就正好满足的LRU缓存算法的思想
  * @author dev.liang <a href="mailto:dev.liang@outlook.com">Contact me.</a>
  * @version 1.0
  * @since 2019/06/06 14:21
@@ -17,7 +23,10 @@ import java.util.Map;
 public class LinkedHashMapTest {
 
     public static void main(String[] args) throws InterruptedException {
-
+        /**
+         * 其中accessOrder设置为 true 则为访问顺序
+         * 为false，则为插入顺序
+         */
         LinkedHashMap<Integer, Integer> map = new LinkedHashMap(0, 0.75f, true);
         // head
         map.put(0, 0);
@@ -38,10 +47,12 @@ public class LinkedHashMapTest {
         // tail
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            Thread.sleep(1000);
+//            Thread.sleep(1000);
             System.out.println(entry.getKey() + ":" + entry.getValue());
 
         }
+
+
     }
 
 

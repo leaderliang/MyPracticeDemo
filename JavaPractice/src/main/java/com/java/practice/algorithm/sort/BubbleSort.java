@@ -1,4 +1,4 @@
-package com.java.practice.sort;
+package com.java.practice.algorithm.sort;
 
 /**
  * TODO
