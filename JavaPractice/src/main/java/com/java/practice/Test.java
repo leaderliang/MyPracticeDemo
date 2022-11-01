@@ -62,6 +62,17 @@ public class Test extends Male {
         System.out.println(m.replaceAll("").trim());*/
 
 
+
+
+    }
+
+    private static String a(){
+        for (int i = 0; i < 10; i++) {
+            String s = String.valueOf(i);
+            return s;
+        }
+
+        return null;
     }
 
     private void stringToDate(String time) {

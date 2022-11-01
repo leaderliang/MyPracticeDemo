@@ -67,8 +67,8 @@ public class TestReflect {
         //4.遍历学生数组，拿到每一个学生对象，做进一步的操作
         for (Student stu : s) {
             //System.out.println(stu);
-            stu.play();//通过遍历到的对象，执行play()
-            System.out.println(stu.age);//通过遍历到的对象，打印age属性
+            stu.play();// 通过遍历到的对象，执行 play()
+            System.out.println(stu.age);// 通过遍历到的对象，打印age属性
         }
     }
 

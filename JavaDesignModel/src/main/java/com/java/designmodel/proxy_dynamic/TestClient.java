@@ -26,8 +26,11 @@ public class TestClient {
         // 委托类对应的 ProxyHandler
         DynamicProxyHandler mProxy = new DynamicProxyHandler(mRealSubject);
         Class[] classes = new Class[]{Subject.class};
+
+        Class<?>[] interfaces = mRealSubject.getClass().getInterfaces();
         // 代理类
         Subject proxySubject = (Subject) Proxy.newProxyInstance(classLoader, classes, mProxy);
+//        Subject proxySubject = (Subject) Proxy.newProxyInstance(classLoader, interfaces, mProxy);
         //由代理类去做具体的操作
         proxySubject.doSomething();
     }

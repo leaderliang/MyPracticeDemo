@@ -17,7 +17,7 @@ buildscript {
         maven { url 'https://maven.aliyun.com/repository/jcenter'}
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:4.2.2'
         // status bar bg
         classpath 'me.tatarka:gradle-retrolambda:3.3.1'
 
@@ -28,7 +28,7 @@ buildscript {
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3"
 
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
         classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
 
     }
@@ -51,14 +51,17 @@ allprojects {
     }
 }
 
+
+
 task clean(type: Delete) {
-    delete rootProject.buildDir
-}
+    delete rootProject.buildDir}
+
+
 
 ext {
-    compileSdkVersion = 28
-    buildToolsVersion = '28.0.3'
-    targetSdkVersion = 28
+    compileSdkVersion = 30
+    buildToolsVersion = '30.0.2'
+    targetSdkVersion = 30
     minSdkVersion = 19
     versionCode = 2
     versionName = "1.1"
