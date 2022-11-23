@@ -24,7 +24,7 @@ public class BubbleSort {
         boolean isNeedExchange;
         for (int i = 0; i < arr.length - 1; i++) {
             isNeedExchange = false;
-            int length = arr.length - i - 1;
+            int length = arr.length - 1  - i;
             System.out.println("\n\n" + "length "+length );
             for (int j = 0; j < length; j++) {
                 System.out.println("j="+j +"   arr[j]="+arr[j]+ "   arr[j + 1]="+arr[j + 1]);
