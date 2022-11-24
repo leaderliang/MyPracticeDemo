@@ -1,5 +1,7 @@
 include ':app', ':SinaLogin', ':BottomSheet', ':AndroidPermission', ':zxing',
         ':VideoCompress', ':FFmpegAndroid', ':AndroidDrawView',
         ':TouchEventTest', ':DqdTestDemo', ':statusbarbg', ':AidlDemo',
-        ':hencoder', ':hencoder', ':JavaPractice', ':JavaDesignModel', ':MaterialDesign', ":JavaTest"
+        ':hencoder', ':hencoder', ':JavaPractice', ':JavaDesignModel', ':MaterialDesign', ':JavaTest_'
 include ':CommonUtil'
+include ':AndroidTest'
+include ':JavaTest'
