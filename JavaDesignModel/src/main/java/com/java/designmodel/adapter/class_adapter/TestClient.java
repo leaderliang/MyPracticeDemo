@@ -1,4 +1,4 @@
-package com.java.designmodel.class_adapter;
+package com.java.designmodel.adapter.class_adapter;
 
 /**
  * TODO

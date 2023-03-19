@@ -1,4 +1,4 @@
-package com.java.designmodel.class_adapter;
+package com.java.designmodel.adapter.class_adapter;
 
 /**
  * TODO  类适配器，需要继承原有的系统，同时实现新的接口  功能
