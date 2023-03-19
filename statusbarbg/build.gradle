@@ -19,8 +19,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    dataBinding {
+    /*dataBinding {
         enabled = true
+    }
+    DSL element 'android.dataBinding.enabled' is obsolete and has been replaced with 'android.buildFeatures.dataBinding'.
+       It will be removed in version 7.0 of the Android Gradle plugin.
+
+    */
+
+    buildFeatures{
+        dataBinding = true
     }
     
     compileOptions {

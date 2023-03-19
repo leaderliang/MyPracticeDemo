@@ -34,7 +34,8 @@ public class TestClient {
         Class<?>[] interfaces = mRealSubject.getClass().getInterfaces();
         // 代理类
         Subject proxySubject = (Subject) Proxy.newProxyInstance(classLoader, classes, mProxy);
-//        Subject proxySubject = (Subject) Proxy.newProxyInstance(classLoader, interfaces, mProxy);
+        // 另一种写法
+        Subject proxySubject_ = (Subject) Proxy.newProxyInstance(classLoader, interfaces, mProxy);
         //由代理类去做具体的操作
         proxySubject.doSomething();
     }

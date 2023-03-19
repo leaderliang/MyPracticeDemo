@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 
 /**
  * TODO
+ * 代理类
  *
  * @author dev.liang <a href="mailto:dev.liang@outlook.com">Contact me.</a>
  * @version 1.0
